@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="main-nav">
+        <ul class="main-nav__items">
+          <li><a href="#">главная</a></li>
+          <li><a href="#">фото и видео</a></li>
+          <li><a href="#">форма отзыва</a></li>
+          <li><a href="#">html academy</a></li>
+        </ul>
+      </div>
+      <div class="page-header__menu">
+        <div class="page-header__logo"></div>
+        <button class="page-header__btn" type="button">Открыть меню</button>
+      </div>
+      <div class="page-header__title"></div>
+    </header>
+
+    <main class="form">
+      <h2 class="form__title">Оставьте свой отзыв</h2>
+      <p>
+        Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+      </p>
+      <form class="form__field" action="https://echo.htmlacademy.ru" method="post">
+
+        <div class="form__field-name">
+          <h3>Представьтесь:</h3>
+          <div class="form__iner">
+            <label for="name">имя:</label>
+            <input type="text" name="name" id="name" placeholder="Петр" required>
+          </div>
+          <div class="form__iner">
+            <label for="surname">фамилия:</label>
+            <input type="text" name="surname" id="surname" placeholder="Иванов" required>
+          </div>
+          <div class="form__iner">
+            <label for="patronymic">отчество:</label>
+            <input type="text" name="surname" id="patronymic" placeholder="Александрович">
+          </div>
+        </div>
+
+        <div class="form__field-contacts">
+          <h3>Контактная информация</h3>
+          <div class="form__iner">
+            <label for="phone">контактный телефон</label>
+            <input type="tel" name="tel" id="phone" placeholder="Введите телефон" required>
+            <span class="form__error">Ошибка, перепроверьте номер</span>
+          </div>
+          <div class="form__iner">
+            <label for="email">электронная почта:</label>
+            <input type="email" name="email" id="email" placeholder="Введите e-mail" required>
+          </div>
+        </div>
+
+        <div class="form__field-radio">
+          <h3>Ваше общее впечатление:</h3>
+          <div class="form__iner">
+            <input type="radio" value="radio-1" name="radio" id="radio-1" checked>
+            <label for="radio-1">Скорее положительное</label>
+          </div>
+          <div class="form__iner">
+            <input type="radio" value="radio-2" name="radio" id="radio-2">
+            <label for="radio-2">Скорее отрицательное</label>
+          </div>
+          <div class="form__iner">
+            <input type="radio" value="radio-3" name="radio" id="radio-3">
+            <label for="radio-3">Затрудняюсь ответить</label>
+          </div>
+        </div>
+
+
+        <div class="form__field-check">
+          <h3>Посещенные достопримечательности:</h3>
+          <div class="form__iner">
+            <input type="checkbox" value="check-1" name="check-1" id="check-1" checked>
+            <label for="check-1">Мост Дьявола</label>
+          </div>
+          <div class="form__iner">
+            <input type="checkbox" value="check-2" name="check-2" id="check-2" checked>
+            <label for="check-2">Слайд-парк</label>
+          </div>
+          <div class="form__iner">
+            <input type="checkbox" value="check-3" name="check-3" id="check-3">
+            <label for="check-3">Гора-Колокол</label>
+          </div>
+          <div class="form__iner">
+            <input type="checkbox" value="check-4" name="check-4" id="check-4" checked>
+            <label for="check-4">Красные скалы</label>
+          </div>
+        </div>
+
+        <div class="form__field-message">
+          <h3>Опишите свои эмоции</h3>
+          <textarea name="text" rows="5" id="message" placeholder="Опишите подробно все свои восторги"></textarea>
+          <input class="form__field-bnt" type="submit" value="Отправить отзыв">
+        </div>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <h2 class="page-footer__hashtag">#visitsedona</h2>
+      <div class="page-footer__social">
+        <a class="page-footer__social-btn" href="#"></a>
+        <a class="page-footer__social-btn" href="#"></a>
+        <a class="page-footer__social-btn" href="#"></a>
+      </div>
+      <div class="page-footer__copyright">website by<a href="#"><img src="img/icon-htmlacademy.png"> </a> </div>
+    </footer>
+
+  </body>
+</html>
